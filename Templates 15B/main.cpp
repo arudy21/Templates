@@ -1,14 +1,21 @@
-//
-//  main.cpp
+//  Alex Rudy
+//  April 30
 //  Templates 15B
-//
-//  Created by Alex Rudy on 4/30/23.
-//
 
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+template <typename T>
+T half(T value)
+{
+    T num;
+    num = value / 2;
+    return num;
+}
+
+int half(int value)
+{
+    int num = static_cast<int>(value / 2);
+    return num;
 }
